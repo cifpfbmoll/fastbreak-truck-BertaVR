@@ -29,9 +29,9 @@ public class FastBreakTruckTest {
         assertFalse(FastBreakTruck.incluirJuguete(FastBreakTruck.prepararSmiggles()));
         assertTrue(FastBreakTruck.incluirJuguete(FastBreakTruck.prepararEyeHoles()));
 
-        Desayuno eyeDes = FastBreakTruck.prepararEyeHoles();
-        FastBreakTruck.incluirJuguete(eyeDes);
-        assertTrue(eyeDes.getItems().stream().anyMatch(i -> i instanceof Plumbus));
+        Desayuno eyeDes2 = FastBreakTruck.prepararEyeHoles();
+        FastBreakTruck.incluirJuguete(eyeDes2);
+        assertTrue(eyeDes2.getItems().stream().anyMatch(i -> i instanceof Plumbus));
 
     }
 }
