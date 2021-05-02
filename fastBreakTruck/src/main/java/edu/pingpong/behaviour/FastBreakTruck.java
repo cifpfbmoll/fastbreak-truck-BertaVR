@@ -20,15 +20,18 @@ public class FastBreakTruck {
         return desayuno;
     }
 
-    public static void incluirJuguete(Desayuno desayuno) { //por programación defensiva checkeo que sea un eyeholes
+    public static boolean incluirJuguete(Desayuno desayuno) {//por programación defensiva checkeo que sea un eyeholes
+        boolean jugueteIncluido = false;
         for (Item item : desayuno.getItems()) {
             if (item instanceof Eyeholes) {
                 desayuno.addItem(new Plumbus());
+                jugueteIncluido = true;
                 break;
             }
 
         }
 
+    return jugueteIncluido;
     }
 
 }
