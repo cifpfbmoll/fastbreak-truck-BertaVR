@@ -9,12 +9,13 @@ public abstract class Cereales implements Item {
     public Cereales() {
     }
 
+    @Override
     public Packing empaquetado() {
         return new Caja();
     }
 
     @Override
     public String toString() {
-        return "Item: " + nombre() + ", Empaquetado: Caja" + ", Precio: " + pvp().toString() + '\n';
+        return "Item: " + nombre() + ", Empaquetado: "+ empaquetado().envoltorio() + ", Precio: " + pvp().toString() + '\n';
     }
 }

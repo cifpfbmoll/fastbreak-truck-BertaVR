@@ -9,11 +9,11 @@ public class Eyeholes extends Cereales {
     public Eyeholes() {
 
     }
-
+    @Override
     public String nombre() {
         return NOMBRE;
     }
-
+    @Override
     public Float pvp() {
         return PVP;
     }

@@ -10,11 +10,11 @@ public class FleebJuice extends Bebida {
     public FleebJuice() {
 
     }
-
+    @Override
     public String nombre() {
         return NOMBRE;
     }
-
+    @Override
     public Float pvp() {
         return PVP;
     }

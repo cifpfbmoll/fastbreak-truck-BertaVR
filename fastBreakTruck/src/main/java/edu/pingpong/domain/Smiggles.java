@@ -10,11 +10,11 @@ public class Smiggles extends Cereales {
 
     }
 
-
+    @Override
     public String nombre() {
         return NOMBRE;
     }
-
+    @Override
     public Float pvp() {
         return PVP;
     }

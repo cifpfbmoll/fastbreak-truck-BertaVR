@@ -9,13 +9,14 @@ public abstract class Bebida implements Item {
     public Bebida() {
     }
 
+    @Override
     public Packing empaquetado() {
         return new Tubo();
     }
 
     @Override
     public String toString() {
-        return "Item: " + nombre() + ", Empaquetado: Tubo"  + ", Precio: " + pvp().toString() + '\n';
+        return "Item: " + nombre() + ", Empaquetado: Tubo"  + empaquetado().envoltorio() + ", Precio: " + pvp().toString() + '\n';
     }
 
 }

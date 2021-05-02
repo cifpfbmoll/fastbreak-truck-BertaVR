@@ -10,11 +10,11 @@ public class Plumbus extends Juguete {
     public Plumbus() {
 
     }
-
+    @Override
     public String nombre() {
         return NOMBRE;
     }
-
+    @Override
     public Float pvp() {
         return PVP;
     }

@@ -10,11 +10,11 @@ public class TurbulentJuice extends Bebida {
     public TurbulentJuice() {
 
     }
-
+    @Override
     public String nombre() {
         return NOMBRE;
     }
-
+    @Override
     public Float pvp() {
         return PVP;
     }
