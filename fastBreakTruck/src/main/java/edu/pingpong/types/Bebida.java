@@ -15,7 +15,7 @@ public abstract class Bebida implements Item {
 
     @Override
     public String toString() {
-        return "Item: " + nombre() + ", Empaquetado: " + empaquetado().toString() + ", Precio: " + pvp().toString();
+        return "Item: " + nombre() + ", Empaquetado: Tubo"  + ", Precio: " + pvp().toString() + '\n';
     }
 
 }
