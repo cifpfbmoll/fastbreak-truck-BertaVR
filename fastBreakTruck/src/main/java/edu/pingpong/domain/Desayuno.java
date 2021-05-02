@@ -30,6 +30,7 @@ public class Desayuno {
     }
 
     public Float getCoste() {
+        total = 0f; //lo pongo en 0 antes porque si no da problemas cuando haces un desayuno y luego añades juguete
         getItems().forEach(item -> total += item.pvp());
         return this.total;
     }
