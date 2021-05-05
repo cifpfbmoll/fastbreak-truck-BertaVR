@@ -1,14 +1,4 @@
-# Autograding Example: Java
-This example project is written in Java, and tested with Gradle/JUnit.
-
-### The assignment
-The tests are currently failing because of an output mismatch. Fixing the `System.out.println` in the main method will make the tests green.
-
-### Setup command
-N/A
-
-### Run command
-`gradle test`
-
-### Notes
-- The JDK is installed on GitHub Actions machines, so you're also able to directly invoke `javac`, `java`, or any other CLI command included in the JDK. 
+# FastBreakTruck
+Este es un kata para practicar principios SOLID y patrones de diseño. En este caso he utilizado el Builder pattern, es probable que en un futuro repita este kata usando un abstract factory. El objetivo del kata es construir un camión de desayunos que sea capaz de preparar dos tipos de desayunos (un desayuno es un objeto compuesto por 0 o  más items). Uno de los desayunos que queremos preparar contendrá  un cereal llamado Eyehold y un zumo llamado Turbulent Juice y el otro, un cereal llamado Smiggles y un zumo llamado FleebJuice. Los zumos y cereales son items. Cada zumo o cereal recibirá una inyección de dependencias de un tipo de packing (el cereal tiene una caja, el zumo tiene un tubo).
+El objetivo es hacer un programa lo suficientemente Open Closed para que una vez hecho, se puedan añadir nuevas características: en este caso se nos requería que añadiéramos la posibilidad de que con el desayuno Eyehold se incluyera un juguete llamado plumbus. Esto se consigue aplicando bien el principio de sustitució de Liskov e invirtiendo dependencias (que las interfaces y las superclases abstractas no dependan de las subclases, sino al contrario).
+Para ver más información sobre la arquitectura, lógica o ver el UML del proyecto, hay que ir a [este repositorio de mi profesor](https://github.com/dfleta/fastbreaktruck).
