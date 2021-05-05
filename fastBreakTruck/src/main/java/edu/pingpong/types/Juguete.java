@@ -16,6 +16,6 @@ public abstract class Juguete implements Item {
 
     @Override
     public String toString() {
-        return "Item: " + nombre() + ", Empaquetado: "+ empaquetado().envoltorio() + ", Precio: " + pvp().toString() + '\n';
+        return this.formatoOutput();
     }
 }
